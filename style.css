@@ -154,7 +154,6 @@ header{
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    background-color: #b92b27; 
     background: -webkit-linear-gradient(to right, #1565C0, #b92b27); 
     background: linear-gradient(to right, #1565C0, #b92b27);
     padding-top: 1rem;
@@ -175,7 +174,7 @@ header{
 .sidebar{
     width: 20rem;
     height: 100vh;
-    background-color: white;
+    background-color: #09001d;
     position: fixed;
     top: 0;
     right: -20rem;
@@ -201,7 +200,7 @@ header{
 .menu-link{
     font-family: var(--font-action);
     font-size: 2rem;
-    color: #555;
+    color: #ffffff;
     transition: color 1s;
 }
 
@@ -239,7 +238,6 @@ header{
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows:  repeat(6, 6rem);
     row-gap: .5rem;
-
 }
 
 .conhecimento:nth-child(1){
@@ -325,4 +323,21 @@ header{
 .conhecimentos-img-wrapper img{
     object-fit: cover;
     width: 100%;
+}
+
+/*Teste do botao*/
+@keyframes animate
+{
+    0%
+    {
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+    100%
+    {
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
 }
