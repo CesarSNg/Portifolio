@@ -179,6 +179,7 @@ header{
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index:10;
 }
 
 .show-menu .sidebar{
@@ -205,7 +206,7 @@ header{
 }
 
 .menu-link:hover{
-    color: #08145c;
+    color: #3d55e2;
 }
 
 .social-midia{
@@ -324,6 +325,104 @@ header{
     object-fit: cover;
     width: 100%;
 }
+
+.projetos{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.card{
+    width: 18rem;
+    height: 25rem;
+    position: relative;
+    z-index:5;
+}
+
+.card-img-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    border-radius: .5rem;
+    background-color: black;
+}
+
+.card-img-wrapper img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    opacity: .8;
+    transition: opacity .3s;
+}
+
+.card:hover .card-img-wrapper img{
+    opacity: .2;
+}
+
+.card-info{
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, .6);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.card-info  h2{
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #eee;
+}
+
+.card-info h3{
+    font-family: var(--font-secundary);
+    font-weight: bolder;
+    color: rgb(80, 252, 229);
+    margin-bottom: 1.5rem;
+}
+
+.card-info p{
+    font-family: var(--font-secundary);
+    color: white;
+    font-weight: 400;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.card-info button{
+    width: 8rem;
+    height: 2.5rem;
+    background: #ADA996;
+background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    font-family: var(--font-action);
+    color: black;
+    font-size: 1rem;
+    border-radius: .5rem;
+    box-shadow: 0 .1rem .8 rgba(0, 0, 0, .4);
+    border: none;
+}
+
+.card-info button:hover{
+    color: #6f00ff;
+}
+
+.card:hover .card-info{
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
 
 /*Teste do botao
 @keyframes animate
