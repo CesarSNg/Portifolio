@@ -14,6 +14,9 @@
     --font-secundary: "josefin Slab", serif;
     --font-action: "Muli", serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 .hamburguer{
    /* background-color: red; */
@@ -272,20 +275,26 @@ header{
 }
 
 .sessao-conhecimentos{
-    background-color: #f5f5f5 ;
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
 }
 
 .sessao-header{
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000)
+
 }
 
 .sessao-header h1{
     font-family: var(--font-primary);
     font-size: 3rem;
-    color: #090847;
-    border-bottom: solid 3px #08145c;
+    color: #ffffff;
+    border-bottom: solid 3px #ffffff;
     margin-bottom: 1.5rem;
 
 }
@@ -293,11 +302,7 @@ header{
 .conhecimento-header{
     display: flex;
     align-items: center;
-    color: #090847;
-}
-
-.conhecimento-header i{
-    font-size: 2.5rem;
+    color: #ffffff;
 }
 
 .conhecimento-header i{
@@ -313,6 +318,7 @@ header{
 .conhecimento-text{
     font-family: var(--font-secundary);
     margin-top: 1rem;
+    color: #f0fff0;
 }
 
 .conhecimentos-img-wrapper{
@@ -329,6 +335,9 @@ header{
 .projetos{
     display: flex;
     justify-content: space-evenly;
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000)
 
 }
 
@@ -342,7 +351,6 @@ header{
 .card-img-wrapper{
     width: 100%;
     height: 100%;
-    background-color: #262626;
     border-radius: .5rem;
     background-color: black;
 }
@@ -422,7 +430,9 @@ header{
 .sessao-contato {
     width: 100%;
     height: 100vh;
-    background-color: #272727;
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -524,63 +534,114 @@ header{
   .sessao-orcamento{
     width: 100%;
     height: 100vh;
-    background: url(imagens/Orcamento.jpg);
+    background: url("./imagens/Orcamento4.jpg");
     object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
+  
   .orcamento-wrapper{
     width: 60%;
     height: 80%;
     background-color: #ffffff99;
     border-radius: 10px;
-    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
     position: relative;
-    }
-
-    .sessao-orcamento h1{
-    position: relative;
+  }
+  
+  .sessao-orcamento h1{
+    position: absolute;
     top: -2.5rem;
     left: 2rem;
     background: #ADA996;
     background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
     background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
-    padding: 0.3rem;
-    color: #fff;
+    padding: 0 3rem;
+    color: #272727;
     font-family: var(--font-primary);
     font-size: 3rem;
     font-weight: lighter;
-    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    }
-    .sessao-orcamento form{
+  }
+  
+  .sessao-orcamento form{
     margin: 4rem;
     display: grid;
     grid-template-columns: auto 1fr;
     column-gap: 2rem;
     row-gap: 2rem;
-    }
-
-    .sessao-orcamento label{
-    font-family: var(--font-secundary);
+  }
+  
+  .sessao-orcamento label{
+    font-family: var(--font-action);
     font-size: 1.5rem;
-    font-weight: bold;
+  }
+  
+  .sessao-orcamento input[type="number"]{
+    font-family: var(--font-secundary);
+    width: 4rem;
+    font-size: 2rem;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 0.3rem;
+  }
+  
+  .btn-orcamento{
+    text-transform: uppercase;
+    padding: 1rem;
+    cursor: pointer;
+    grid-column: 2;
+  }
+
+    footer{
+        width: 100%;
+        height: 7rem;
+        background-color: #09001d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .sessao-orcamento input[type="number"]{
+    .footer-content{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-content p{
         font-family: var(--font-secundary);
-        width: 4rem;
-        font-size: 2rem;
-        outline: none;
-        border-radius: 10px;
-        border: none;
-        padding: .3rem;
+        color: #f5f5f5;
+        font-size: 1.2rem;
     }
 
-    .btn-orcamento{
-        text-transform: uppercase;
-        padding: 1rem;
-        cursor: pointer;
-        grid-column: 2;
+    .social-list a{
+        margin: 0.2rem;
+        color: #f5f5f5;
+        font-size: 1.3rem;
+    }
+
+    .social-list ul{
+        display: flex;
+    }
+
+    #link-topo{
+        position: fixed;
+        right: 3rem;
+        bottom: 3rem;
+        width: 3rem;
+        height: 3rem;
+        background: #ADA996;
+        background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+        background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        border-radius: .3rem;
+        box-shadow: 0 0.1rem 0.6rem #000000;
     }
 
 /*Teste do botao
